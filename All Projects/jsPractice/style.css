@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 91vh;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#userSection {
+    display: none;
+}
+
+input {
+    width: 95%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 14px 28px;
+
+    background: white;
+    color: #5b5bd6;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #f1f1f1;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#loading {
+    display: none;
+
+    text-align: center;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 20px 0;
+}
+
+#error {
+    display: none;
+
+    background: rgba(255, 0, 0, 0.15);
+    color: white;
+
+    padding: 14px;
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+
+#userList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.user-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.user-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-email {
+    margin-top: 8px;
+    color: #666;
+    font-size: 15px;
+}
+
+.user-city {
+    margin-top: 10px;
+
+    display: inline-block;
+
+    background: #eef2ff;
+    color: #5b5bd6;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#loginError{
+    color: rgb(236, 0, 0);
+    font-size: 20px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}

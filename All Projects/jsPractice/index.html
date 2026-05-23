@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Click Events</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="loginSection">
+            <h1>Login</h1>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <input type="password" id="password" placeholder="Enter Your Password">
+            <button id="loginBtn">Login</button>
+            <div id="loginError"></div>
+        </div>
+
+        <div id="userSection">
+            <h1>User List</h1>
+
+            <div class="button-group">
+                <button id="loadBtn">User Data</button>
+                <button id="loading">Loading...</button>
+            </div>
+
+            <div id="error"></div>
+
+            <div id="userList"></div>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
